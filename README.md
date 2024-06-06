@@ -23,3 +23,30 @@ Docker: Follow the installation guide on  [Docker's Official Website](https://ww
 .
 Docker Compose: Follow the installation guide on [Docker Compose Official Website](https://docs.docker.com/compose/)
 .
+# Check Installation:
+
+Run the following commands in your terminal to verify that Docker and Docker Compose are installed correctly:
+![image](https://github.com/Hagar-zakaria/A-Comprehensive-Guide-to-Implementing-Real-Time-Streaming-with-Kafka/assets/93611934/e5f7c046-dbf7-4adf-b78e-30508f8c253f)
+
+2. Creating Docker Compose Configuration
+Create a directory for your project and navigate to it:
+![image](https://github.com/Hagar-zakaria/A-Comprehensive-Guide-to-Implementing-Real-Time-Streaming-with-Kafka/assets/93611934/30b2a772-4371-4bb7-abfb-5613a4d21a80)
+
+Create a docker-compose.yml file with the following content:
+![image](https://github.com/Hagar-zakaria/A-Comprehensive-Guide-to-Implementing-Real-Time-Streaming-with-Kafka/assets/93611934/e4d92962-dbfa-4326-904b-241bb766a96a)
+
+3. Running Docker Compose
+Start the services defined in your docker-compose.yml file by running:
+![image](https://github.com/Hagar-zakaria/A-Comprehensive-Guide-to-Implementing-Real-Time-Streaming-with-Kafka/assets/93611934/3907547f-fd90-40f6-b438-5c0d3b2e0859)
+
+4. Verifying the Setup
+Check the status of the running containers:
+![image](https://github.com/Hagar-zakaria/A-Comprehensive-Guide-to-Implementing-Real-Time-Streaming-with-Kafka/assets/93611934/bb6afeee-7f55-43b1-9889-d67dd52d73dc)
+
+You should see zookeeper and kafka containers running.
+
+5. Creating and Managing Kafka Topics
+Create a Kafka topic:
+'''
+docker-compose exec kafka kafka-topics.sh --create --topic test-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+'''
