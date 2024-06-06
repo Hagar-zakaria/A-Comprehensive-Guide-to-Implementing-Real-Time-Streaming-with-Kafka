@@ -67,7 +67,8 @@ Consuming messages from the topic:
 ![image](https://github.com/Hagar-zakaria/A-Comprehensive-Guide-to-Implementing-Real-Time-Streaming-with-Kafka/assets/93611934/443ba3ec-65b8-4d6c-9b2b-6107cfa1ebe9)
 
 7. Troubleshooting Common Errors
-1.  Error: version is obsolete
+   
+ 1.  Error: version is obsolete
 - Solution: This is a warning indicating the version attribute in your docker-compose.yml is outdated but does not affect functionality. You can update the version if needed.
 
  2. Error: no configuration file provided: not found
