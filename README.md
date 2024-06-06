@@ -68,7 +68,7 @@ Consuming messages from the topic:
 
 7. Troubleshooting Common Errors
    
- 1.  Error: version is obsolete
+  1.Error: version is obsolete
 - Solution: This is a warning indicating the version attribute in your docker-compose.yml is outdated but does not affect functionality. You can update the version if needed.
 
  2. Error: no configuration file provided: not found
